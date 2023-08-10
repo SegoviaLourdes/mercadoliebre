@@ -14,20 +14,26 @@
 <body>
     <header>
         <nav class="colorFondo">
-
-            <img src="imagenes/logoMercadoLiebre.svg" alt="logo">
-          
-            <form action="" method="get">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Buscar productos, marcas"
-                />
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-
-            <p><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+            <div class="logoBarraText">
+                <img class="logo"src="imagenes/logoMercadoLiebre.svg" alt="logo">
+                
+                <div class="barraBusqueda">
+                    <form action="" method="get">
+                        <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Buscar productos, marcas"
+                        />
+                        <button class="lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="Compra">
+                    <p class="caja"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de credito</p>
+                </div>
+            </div>
+           
+            <div class="items">
             <div class="item">
                 <ul>
                     <li><a href="">Ofertas</a></li>
@@ -38,30 +44,33 @@
             </div>
             <div class="item">
                 <ul>
-                    <li><a href="">Crea tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
-                    <li><a href="">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="/register">Crea tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
+                    <li><a href="/login">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
                     <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
                 </ul>
-            </div>    
+            </div> 
+            </div>
                 <div class="burger-menu"><i class="fas fa-bars"></i></div>
         </nav>
         <div class="banner"><img src="imagenes/img-home-banner.jpg" alt="banner"></div>
     </header>
 
     <main>
-        <form action="/" method="get">
+        <div class="form">
+        <form class="formulario" action="/" method="get">
            
             <input type="text" name="usuario" placeholder="Nobre de usuario">
 
             <input type="password" name="" placeholder="Elegi tu contraseña">
-
-            <button type="submit">Enviar</button>
-
+            
+            <button class="boton-login" type="submit">Enviar</button>
+            
         </form>
-        
+        </div>
     </main>
 
     <footer>
+        <div class="contenedor">
         <div class="seccion">
         <i class="fa-solid fa-credit-card"></i>
         <h2>Pagá con tarjeta o en efectivo</h2>   
@@ -76,6 +85,7 @@
         <i class="fa-solid fa-user-shield"></i>
         <h2>Seguridad, de principio a fin</h2>   
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </div>
         </div>
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
